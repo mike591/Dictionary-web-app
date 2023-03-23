@@ -1,0 +1,194 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 737px;
+  flex-grow: 1;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: max-content;
+  margin-bottom: 45px;
+}
+
+.settings {
+  display: flex;
+  align-items: center;
+}
+
+.spacer {
+  border-right: 1px solid var(--black-300);
+  height: 32px;
+  margin: 0 26px;
+}
+
+.content {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.error {
+  margin-top: 132px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.face {
+  font-size: 64px;
+  margin-bottom: 44px;
+}
+
+.error .errorTitle {
+  margin-bottom: 24px;
+}
+
+.error .errorText {
+  text-align: center;
+}
+
+.contentHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contentHeader .phonetic {
+  margin-top: 8px;
+}
+
+.partOfSpeechWrapper {
+  display: flex;
+  align-items: center;
+  margin: 54px 0;
+  gap: 20px;
+}
+
+.partOfSpeech {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--black-200);
+  font-style: italic;
+}
+
+.line.dark {
+  background-color: var(--black-400);
+}
+
+.unorderedList {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0 0;
+}
+
+.listItem {
+  margin-bottom: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 13px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.listItem::before {
+  content: "•";
+  color: var(--purple);
+  padding-top: 4px;
+  position: absolute;
+  left: 0;
+}
+
+.synonyms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-top: 40px;
+}
+
+.purple {
+  color: var(--purple);
+}
+
+.light {
+  color: var(--black-300);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.sourceLine {
+  margin-top: 40px;
+  margin-bottom: 19px;
+}
+
+.sourceWrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: inherit;
+}
+
+@media (max-width: 414px) {
+  .spacer {
+    margin: 0 16px;
+  }
+
+  .content {
+    margin-top: 24px;
+  }
+
+  .partOfSpeechWrapper {
+    margin: 32px 0;
+  }
+
+  .unorderedList {
+    margin: 17px 0 0;
+  }
+
+  .synonyms {
+    margin-top: 24px;
+  }
+
+  .sourceLine {
+    margin: 32px 0 24px;
+  }
+
+  .sourceWrapper {
+    gap: 9px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sourceHeader {
+    border-bottom: 1px solid var(--black-200);
+  }
+
+  .sourceHeader.dark {
+    border-bottom: 1px solid var(--black-400);
+  }
+
+  .link .linkText {
+    font-size: 14px;
+  }
+}

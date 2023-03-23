@@ -1,0 +1,52 @@
+.themeToggle {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.button {
+  width: 40px;
+  height: 20px;
+  position: relative;
+  background-color: var(--black-300);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+  box-shadow: var(--black-200) 0px 3px 1px 0px;
+}
+
+.dark.button {
+  background-color: var(--purple);
+  box-shadow: none;
+}
+
+.ball {
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  background-color: var(--white);
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  transform: translate(-50%, 0);
+  left: 25%;
+  pointer-events: none;
+}
+
+.dark.ball {
+  left: 75%;
+}
+
+.moon {
+  background-image: url(@/assets/images/icon-moon.svg);
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+}
+
+.dark.moon {
+  background-image: url(@/assets/images/icon-moon-dark.svg);
+  background-size: cover;
+}

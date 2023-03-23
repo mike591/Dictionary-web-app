@@ -1,0 +1,37 @@
+.header {
+  margin: 0;
+}
+
+.sans {
+  font-family: "Inter";
+}
+
+.serif {
+  font-family: "Lora";
+}
+
+.mono {
+  font-family: "Inconsolata";
+}
+
+.small {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.medium {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.large {
+  font-size: 64px;
+  line-height: 77px;
+}
+
+@media (max-width: 414px) {
+  .large {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}

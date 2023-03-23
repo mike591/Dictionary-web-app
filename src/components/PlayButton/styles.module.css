@@ -1,0 +1,31 @@
+.playButton {
+  border: none;
+  cursor: pointer;
+  background-image: url(@/assets/images/icon-play.svg);
+  background-size: cover;
+  width: 75px;
+  height: 75px;
+  transition: all 0.1s;
+  background-color: transparent;
+}
+
+.playButton:hover {
+  background-image: url(@/assets/images/icon-play-hover.svg);
+  background-size: cover;
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+
+.disabled:hover {
+  background-image: url(@/assets/images/icon-play.svg);
+  background-size: cover;
+}
+
+@media (max-width: 414px) {
+  .playButton {
+    width: 48px;
+    height: 48px;
+  }
+}
